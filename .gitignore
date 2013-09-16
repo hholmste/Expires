@@ -1,0 +1,15 @@
+.DS_Store
+
+*.iml
+.idea
+
+.gradle
+
+*/target/*
+/target
+*/project/*
+*/build/*
+*/worlds/*
+*.class
+*/out/
+*/out/*
