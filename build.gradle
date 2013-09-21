@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // binds the build to the particular Oracle-compiler specified in gradle.properties
+    compile files(
+            "${compilerHome}/jre/lib/rt.jar",
+            "${compilerHome}/lib/tools.jar"
+    )
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
